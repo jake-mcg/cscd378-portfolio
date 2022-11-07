@@ -1,35 +1,68 @@
-# cscd378-portfolio
+# v1
 
-Final Project Specifications
+## Build Setup
 
-1. You must use a javascript library (jquery is a great choice) (10%)
-2. You must use a stylesheet to style your site (10%)
-3. You must have a database with data, you will need (10%) 
-    to provide a creation script with instructions so I can 
-    run your final project on my local machine 
-4. You must provide a login functionality with admin (10%)
-    features 
-5. You will need to use cookies to manage state and visits (10%)
-    and present a different page/message for returning users vs. new
-    
-6. You must implement logging and write logs to your database (10%)
-    this will be used for error management and site usage and 
-    any thing else you deem neccesary 
+```bash
+# install dependencies
+$ npm install
 
-7. You are required to use git and provide your repo info so I (10%)
-    can view check in's etc 
-    
-8. You will need to provide a writeup at the end with the following information (20%)
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-    a. initial goals written out, so what you want to accomplish 
-    b. milestones met and milestones not met, you should write out 
-        why anything was not met, for milestones met you need to provide lessons 
-        learned meaning what did you takeaway from accomplishing the milestone 
-        
-    c. post mortem, if I had to do it all over again this is what I would do differently
-    
-    d. user guide for the website explaining features and how to use the different sections
+# build for production and launch server
+$ npm run build
+$ npm run start
 
- 
+# generate static project
+$ npm run generate
+```
 
-Submission should include all of the above, I dont need your code just access to your git repo
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+## Special Directories
+
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+
+### `assets`
+
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+
+### `components`
+
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+
+### `layouts`
+
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+
+### `pages`
+
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+
+### `plugins`
+
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+
+### `static`
+
+This directory contains your static files. Each file inside this directory is mapped to `/`.
+
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+
+### `store`
+
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
