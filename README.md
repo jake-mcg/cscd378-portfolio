@@ -1,35 +1,14 @@
 # cscd378-portfolio
 
-Final Project Specifications
+## Goals
 
-1. You must use a javascript library (jquery is a great choice) (10%)
-2. You must use a stylesheet to style your site (10%)
-3. You must have a database with data, you will need (10%) 
-    to provide a creation script with instructions so I can 
-    run your final project on my local machine 
-4. You must provide a login functionality with admin (10%)
-    features 
-5. You will need to use cookies to manage state and visits (10%)
-    and present a different page/message for returning users vs. new
-    
-6. You must implement logging and write logs to your database (10%)
-    this will be used for error management and site usage and 
-    any thing else you deem neccesary 
+We hope to have a project portfolio site with individual portfolios for each of our team members, as well as administration capabilities. The project section of the site will detail the technologies we used in developing the site as well as how we fulfilled the given requirements for the project. Each individual portfolio will contain descriptions of the person’s qualifications, including a biography, resume, projects. Finally, the administration section will have a login system and a log of the site’s access history.
 
-7. You are required to use git and provide your repo info so I (10%)
-    can view check in's etc 
-    
-8. You will need to provide a writeup at the end with the following information (20%)
+## Milestones Met and Not Met
+TBD…
 
-    a. initial goals written out, so what you want to accomplish 
-    b. milestones met and milestones not met, you should write out 
-        why anything was not met, for milestones met you need to provide lessons 
-        learned meaning what did you takeaway from accomplishing the milestone 
-        
-    c. post mortem, if I had to do it all over again this is what I would do differently
-    
-    d. user guide for the website explaining features and how to use the different sections
+## Post-mortem
+TBD…
 
- 
-
-Submission should include all of the above, I dont need your code just access to your git repo
+## User guide
+TBD...
