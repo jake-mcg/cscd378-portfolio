@@ -8,7 +8,7 @@ class DBConnect {
 
         try {
 
-            $dsn = 'mysql:host=127.0.0.1;port=3306;dbname=sample-db';
+            $dsn = 'mysql:host=127.0.0.1;port=3306;dbname=mydatabase';
             $user = 'root';
             $password = '';
 

@@ -63,19 +63,24 @@
 
                 if ( $conn ) {
 
-                    $sample_query = $conn->prepare( 'SELECT * FROM `sample_table`' );
+                    $sample_query = $conn->prepare( 'SELECT testid, testvalue, testtime, testmessage FROM testdata' );
                     $sample_query->execute();
-                    $results = $sample_query->fetch();
+                    $result = $sample_query->fetchAll();;
 
-                    if ( $results ) {
-                        echo '<ul>';
-                        foreach ( $results as $result ) {
-                            echo '<li>' . $result . '</li>';
+                    if ( $result ) {
+                        foreach ( $result as $result ) {
+                            $testid = $result[0];
+                            $testvalue = $result[1];
+                            $testtime = $result[2];
+                            $testmessage = $result[3];
+
+                            echo "testid: {$testid}, testvalue: {$testvalue}, testtime: {$testtime}, testmessage: {$testmessage} <br>";
                         }
-                        echo '</ul>';
+                        
                     } else {
                         echo '<h5 class="m-5"><span class="badge bg-warning">Cannot get values from sample query</span></h5>';
                     }
+
                 }
                 ?>
             </div>
