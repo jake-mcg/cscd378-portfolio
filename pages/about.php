@@ -1,5 +1,5 @@
 <?php require_once "header.php"; ?>
-<div class="container mt-5">
+<div class="container mt-5" style="padding-bottom:100px;">
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
