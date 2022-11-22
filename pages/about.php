@@ -1,5 +1,6 @@
 <?php require_once "header.php"; ?>
 <div class="container mt-5" style="padding-bottom:100px;">
+    <!-- style="padding-bottom:100px;" mb-5 add 3rem to bottom but we need more added t allow for the footer -->
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
