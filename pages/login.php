@@ -2,10 +2,15 @@
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $loginAttempt = $auth->login($_POST["inputemail"], $_POST["inputpass"]);
+    echo "logging in.";
+    if(!$loginAttempt["error"])
+    {
+        echo "redirecting.";
+        header('location:index.php'); ;
+    }
 }
-if(!$auth->isLogged())
-    header('location:login.php');
-else {
+if($auth->isLogged())
+{
     header('location:index.php'); ;
 }
 ?>
@@ -17,7 +22,7 @@ else {
     <div class = "container">
         <p class="text-danger"><?php echo isset($loginAttempt)?$loginAttempt["message"]:""; ?></p>
     </div>
-    <form method="post" action="admin.php">
+    <form method="post" action="login.php">
         <div class="form-group row">
             <label for="inputEmail" class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
@@ -37,4 +42,5 @@ else {
         </div>
     </form>
 </div>
+
 <?php require_once "footer.php";?>

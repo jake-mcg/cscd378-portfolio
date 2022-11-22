@@ -75,6 +75,12 @@ $auth   = new Auth($dbh, $config);
 
                         ?>
                     </li>
+                    <li class="nav-item">
+                        <?php
+
+                        if($auth->isLogged())
+                            echo "<a class=\"nav-link\" href=\"logout.php\">Log Out</a>"; ?>
+                    </li>
                 </ul>
                 <!-- Left links -->
             </div>
