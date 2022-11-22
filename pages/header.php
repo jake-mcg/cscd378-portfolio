@@ -122,3 +122,5 @@ $auth   = new Auth($dbh, $config);
         <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
+
+    <main style="padding-bottom:100px;">
