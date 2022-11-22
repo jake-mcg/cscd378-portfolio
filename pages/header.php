@@ -96,9 +96,24 @@ $auth   = new Auth($dbh, $config);
 
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <!-- use php code here to render login/register if not signed in, or logout if signed in -->
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        <?php 
+                        $startTag = "<li><a class='dropdown-item' href='#'>";
+                        $endTag = "</a></li>";
+                        
+                        
+                        if($auth->isLogged())
+                        {
+                            $text = $auth->getCurrentUser()["email"];
+                            echo($startTag . $text . $endTag);
+                        } else{
+                            echo("<li><a class='dropdown-item' href='#'>NOT Logged in</a></li>");
+                        }
+                        
+                        
+                        ?>
                     </ul>
                 </div>
             </div>
