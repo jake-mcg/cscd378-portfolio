@@ -1,3 +1,5 @@
+</main>
+
 <!-- Footer -->
 <footer class="bg-dark text-center text-white fixed-bottom">
     <!-- Copyright -->
