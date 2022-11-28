@@ -11,4 +11,12 @@ TBD…
 TBD…
 
 ## User guide
-TBD...
+1. Ensure Phpmyadmin is Installed
+	- If it is not, right click inside Laragon: Tools > Quick add > Phpmyadmin
+2. Log onto Phpmyadmin
+    - User: root
+    - Password: [empty]
+3. Import provided database file (filename pending)
+    a) Import tab
+    b) browse file and select [filename]
+    c) Press the import button
