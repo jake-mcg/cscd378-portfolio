@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/CookieTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/cookieForm.php" afterDir="false" />
+    <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="added cookie page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/CookieTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/CookieTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/cookieForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cookieForm.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +68,17 @@
       <updated>1668293465115</updated>
       <workItem from="1668293470508" duration="29000" />
       <workItem from="1669067880822" duration="140000" />
-      <workItem from="1669151642112" duration="3075000" />
+      <workItem from="1669151642112" duration="4702000" />
+      <workItem from="1669669816307" duration="3586000" />
     </task>
+    <task id="LOCAL-00001" summary="added cookie page">
+      <created>1669155295297</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669155295297</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +94,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added cookie page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cookie page" />
   </component>
 </project>
