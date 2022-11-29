@@ -2,10 +2,10 @@
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $loginAttempt = $auth->login($_POST["inputemail"], $_POST["inputpass"]);
-    echo "logging in.";
+
     if(!$loginAttempt["error"])
     {
-        echo "redirecting.";
+
         header('location:index.php'); ;
     }
 }

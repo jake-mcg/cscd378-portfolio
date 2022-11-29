@@ -4,6 +4,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 use PHPAuth\Auth;
 use PHPAuth\Config;
 
+session_start();
 
 #redirect to https if needed
 

@@ -8,8 +8,11 @@ if (!$auth->isLogged()) {
     exit();
 
 }
-?>
 
+
+$warning = isset($_SESSION["registerAttempt"]) ? $_SESSION["registerAttempt"]["message"] : "";
+unset($_SESSION["registerAttempt"]);
+?>
 <div class="card text-center container mt-5 mb-5">
     <h1 class="card-header">Admin Features</h1>
     <div class="card-body">
@@ -39,21 +42,30 @@ if (!$auth->isLogged()) {
             <!-- Register Tab -->
             <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel"
                 aria-labelledby="ex-with-icons-tab-1">
-                <form>
+                <p class="text-danger">
+                    <?php echo $warning;?>
+                </p>
+                <form method = "post" action = "register.php">
                     <!-- Email input -->
-                    <div class="form-outline mb-4">
-                        <input type="email" id="form3Example3" class="form-control" />
-                        <label class="form-label" for="form3Example3">Email address</label>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="email">Email address</label>
+                        <div class="col-sm-10">
+                            <input type="email" id="email" class="form-control" name = "email" placeholder="email address"/>
+                        </div>
                     </div>
 
                     <!-- Password input -->
-                    <div class="form-outline mb-4">
-                        <input type="password" id="form3Example4" class="form-control" />
-                        <label class="form-label" for="form3Example4">Password</label>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"  for="password">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" id="password" class="form-control" name = "pass" placeholder="password"/>
+                        </div>
                     </div>
-                    <div class="form-outline mb-4">
-                        <input type="password" id="form3Example4" class="form-control" />
-                        <label class="form-label" for="form3Example4">Confirm Password</label>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="confirm">Confirm Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" id="confirm" class="form-control" name = "confPass" placeholder="confirm password"/>
+                        </div>
                     </div>
 
                     <!-- Submit button -->
