@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="edited links to point to the right places">
       <change afterPath="$PROJECT_DIR$/pages/register.php" afterDir="false" />
@@ -7,6 +10,8 @@
       <change beforePath="$PROJECT_DIR$/pages/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/CookieTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/CookieTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/cookieForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cookieForm.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
