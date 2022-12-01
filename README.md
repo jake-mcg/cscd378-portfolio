@@ -17,6 +17,13 @@ TBD…
     - User: root
     - Password: [empty]
 3. Import provided database file (filename pending)
-    a) Import tab
-    b) browse file and select [filename]
-    c) Press the import button
+
+	a. Import tab
+	
+	b. browse file and select [filename]
+	
+	c. Press the import button
+
+4. Enable SSL on Laragon
+	- menu->apache->ssl-> enable
+	- menu->apache->ssl-> add laragon.crt to trust store
