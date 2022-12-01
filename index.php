@@ -1,3 +1,7 @@
+<?php 
+// Redirect to our actual project root 
+header("Location: pages/index.php"); ?>
+
 <?php require_once 'db-connect.php'; ?>
 
 <!DOCTYPE html>
@@ -33,7 +37,8 @@
                     <p class="font-weight-bold">This is an example PHP + PDO project starter.</p>
                     <div class="text-start">
                         <p>It assumes you have a local database named <code>sample-db</code> served at
-                            <code>127.0.0.1:3306</code> and one table named <code>sample_table</code>.</p>
+                            <code>127.0.0.1:3306</code> and one table named <code>sample_table</code>.
+                        </p>
                         <p>You can change the configuration in <code>db-connect.php</code> and <code>index.php</code>
                             files.</p>
                         <p>If you don't have a database locally, you can create it using the following MDB CLI command:

@@ -89,8 +89,25 @@ unset($_SESSION["registerAttempt"]);
 
             <!-- Logs Tab -->
             <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
-                Im thinking for this section we should log login attempts to a unique table, and then display those
-                here.
+
+
+
+                <!-- logs Table -->
+                <table class="table">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>ID</th>
+                            <th>IP</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php require_once "badloginattempts.php" ?>
+                    </tbody>
+
+                </table>
+
+
             </div>
         </div>
         <!-- Tabs content -->
