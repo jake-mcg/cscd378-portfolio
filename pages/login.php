@@ -1,18 +1,23 @@
 <?php require_once "header.php";
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $loginAttempt = $auth->login($_POST["inputemail"], $_POST["inputpass"]);
-
-    if(!$loginAttempt["error"])
-    {
-
-        header('location:index.php'); ;
-    }
-}
+#if the user are already logged in send them to the main page.
 if($auth->isLogged())
 {
     header('location:index.php'); ;
 }
+#Check to see if the user tried to log in.
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    #if so try to log them in
+    $loginAttempt = $auth->login($_POST["inputemail"], $_POST["inputpass"]);
+
+    #if there's not an error send them back to the main page
+    if(!$loginAttempt["error"])
+    {
+
+        header('location:index.php');
+        exit();
+    }
+}
+
 ?>
 
 
