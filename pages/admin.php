@@ -1,6 +1,6 @@
 <?php require_once "header.php";
 
-#if the useer isn't logged in, tell them that they can't be here.
+#if the user isn't logged in, tell them that they can't be here.
 if (!$auth->isLogged()) {
     header('HTTP/1.0 403 Forbidden');
     echo "Forbidden";
