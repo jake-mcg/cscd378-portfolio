@@ -36,30 +36,33 @@ unset($_SESSION["registerAttempt"]);
             <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel"
                 aria-labelledby="ex-with-icons-tab-1">
 
-                    <?php
+                <?php
                     #display the warning text if it's not empty.
                     echo !empty($warning)?'<p class="text-danger">'.$warning.'</p>':"";?>
 
-                <form method = "post" action = "register.php">
+                <form method="post" action="register.php">
                     <!-- Email input -->
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label" for="email">Email address</label>
                         <div class="col-sm-10">
-                            <input type="email" id="email" class="form-control" name = "email" placeholder="email address"/>
+                            <input type="email" id="email" class="form-control" name="email"
+                                placeholder="email address" />
                         </div>
                     </div>
 
                     <!-- Password input -->
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label"  for="password">Password</label>
+                        <label class="col-sm-2 col-form-label" for="password">Password</label>
                         <div class="col-sm-10">
-                            <input type="password" id="password" class="form-control" name = "pass" placeholder="password"/>
+                            <input type="password" id="password" class="form-control" name="pass"
+                                placeholder="password" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label" for="confirm">Confirm Password</label>
                         <div class="col-sm-10">
-                            <input type="password" id="confirm" class="form-control" name = "confPass" placeholder="confirm password"/>
+                            <input type="password" id="confirm" class="form-control" name="confPass"
+                                placeholder="confirm password" />
                         </div>
                     </div>
 
@@ -72,7 +75,11 @@ unset($_SESSION["registerAttempt"]);
             <!-- Logs Tab -->
             <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
 
-
+                <div class="row my-5">
+                    <div class="d-flex justify-content-center align-items-center ">
+                        <h5>Failed Login Attempts</h5>
+                    </div>
+                </div>
 
                 <!-- logs Table -->
                 <table class="table">
