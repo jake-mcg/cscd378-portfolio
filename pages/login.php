@@ -2,7 +2,8 @@
 #if the user are already logged in send them to the main page.
 if($auth->isLogged())
 {
-    header('location:index.php'); ;
+    header('location:index.php');
+    exit();
 }
 #Check to see if the user tried to log in.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -12,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     #if there's not an error send them back to the main page
     if(!$loginAttempt["error"])
     {
-
         header('location:index.php');
         exit();
     }
