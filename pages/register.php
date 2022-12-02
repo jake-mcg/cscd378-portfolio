@@ -11,14 +11,13 @@ use PHPAuth\Config;
 $dbh = new PDO("mysql:host=localhost;dbname=mydatabase", "root", "");
 $config = new Config($dbh);
 $auth = new Auth($dbh, $config);
-echo "hello"."<br>";
-var_dump($_POST);
-echo $auth->isLogged()."<br>";
-echo (!isset($_POST["email"]) || !isset($_POST["pass"]) || !isset($_POST["confPass"]) ||!$auth->isLogged())?"yes":"no";
+#check that we got all the required variables, and that the user is logged in.
 if(!isset($_POST["email"]) || !isset($_POST["pass"]) || !isset($_POST["confPass"]) ||!$auth->isLogged()) {
+    #if not go back to admin page
     header("location:admin.php");
     exit();
 }
+#attempt to register, and send the results of the registration attempt back to admin page
 session_start();
 $_SESSION["registerAttempt"]= $auth->register($_POST["email"],$_POST["pass"],$_POST["confPass"]);
 header("location:admin.php");
