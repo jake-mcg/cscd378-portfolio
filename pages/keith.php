@@ -1,19 +1,21 @@
 <?php require_once "header.php"; ?>
 
 <div class="container">
-    <div class="row my-3">
-        <div class="col-3">
+    <div class="row">
+        <div class="col">
             <img src="images/keith.webp" alt="Keith Profile Picture" class="img-fluid rounded-start" />
         </div>
-        <div class="col-9">
-            <h1>Keith Stack</h1>
-            <h3>EWU Computer Science - Senior</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus, tortor ac iaculis
-                pellentesque, dolor mi dignissim dolor, id malesuada neque velit in diam. Praesent sit amet egestas
-                enim. Phasellus pellentesque sollicitudin sapien eget lacinia. Vestibulum suscipit convallis erat at
-                sollicitudin
-            </p>
+        <div class="col">
+            <div class="card p-3 m-2 text-light bg-dark">
+                <h1>Keith Stack</h1>
+                <div class="col">
+
+                    <h3 class = "">About me</h3>
+                    <p class = "card-text">
+                        My name is Keith, but some people call me K.C. I'm a senior at Eastern Washington University who enjoys problem-solving and tinkering.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -38,41 +40,153 @@
         </div>
         <p class="border-top"></p>
     </div>
-    <div class="row justify-content-between">
-        <div class="col-5">
-            <h2>Work Experience</h2>
-            <h6>Curabitur porttitor at Efficitur Orci Aliquam Sagittis</h6>
-            <p>Fusce non euismod turpis. Donec at fermentum massa. Proin ut odio nec lorem maximus gravida.
-                Curabitur aliquam enim sed elit auctor, ut fringilla risus ultricies. Sed ut libero enim. </p>
-            <h2>Education</h2>
-            <h6>BS in Computer Science at Eastern Washington University</h6>
-            <p>Donec aliquet ultrices ipsum, id posuere ex pulvinar non. Integer eget odio dictum, convallis diam
-                quis, placerat odio. Sed placerat nulla at nulla semper lobortis. Donec sollicitudin aliquet ante
-                mattis interdum.</p>
+    <div class="row justify-content-lg-start">
+        <div class="col-sm-12 col-md-5 col-lg-5">
+            <div class = "card">
+                <h2 class = "card-title">Education</h2>
+                <h6>BS in Computer Science at Eastern Washington University, Minor in Mathematics</h6>
+                <p>I am a student at Eastern Washington pursuing a Bachelor of Science in Computer Science with a minor in Mathematics.   </p>
+            </div>
         </div>
-        <div class="col-5 ">
-            <h2>Skills</h2>
-            <div class="progress my-3" style="height:25px;">
-                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                     aria-valuemin="0" aria-valuemax="100">Skill</div>
+
+
+
+        <div class="col-sm-12 col-md-5">
+            <div class="card bg-dark text-light p-2">
+                <h2>Skills</h2>
+                <dl>
+
+                    <dt>C programming language</dt>
+                    <dd>My coursework along with hobby projects have helped me gain proficiency in the C programming language. I also have the C programming language LinkedIn skill badge.</dd>
+
+                    <dt>Object-Oriented Programming</dt>
+                    <dd>Object-Oriented Programming and design patterns in java, C#, C++, and Python. I also have obtained a skill badge for Object-Oriented Programming on LinkedIn.</dd>
+
+                </dl>
             </div>
-            <div class="progress my-3" style="height:25px;">
-                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                     aria-valuemin="0" aria-valuemax="100">Skill</div>
-            </div>
-            <div class="progress my-3" style="height:25px;">
-                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                     aria-valuemin="0" aria-valuemax="100">Skill</div>
-            </div>
-            <h2>Courses</h2>
-            <h6>Maecenas dolor at Eastern Washington University</h6>
-            <p>
-                Quisque vel elit ac quam auctor eleifend non a orci. Morbi sed mattis enim. Vivamus blandit ante
-                sapien, ut tempus velit volutpat laoreet.
-            </p>
         </div>
+
+
+
+
+
+    </div>
+
+    <div class="row my-3">
+
+        <div class="col-sm-12 col-md-5">
+            <div class="card">
+                <h2 class="card-title">Select Course work</h2>
+                <div class="accordion accordion-flush" id="coursework-accordion">
+
+                    <div class = "accordion-item">
+                        <div class="accordion-header" id="big-data-header">
+                            <h2 class="mb-0">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#big-data-analytics" role="button" aria-expanded="true" aria-controls="big-data-analytics">
+                                    Big data Analytics
+                                </button>
+                            </h2>
+                        </div>
+
+
+
+                        <div class = "accordion-collapse collapse show" id="big-data-analytics" data-bs-parent="#coursework-accordion">
+                            <figure>
+                                <blockquote class="blockquote" cite="https://catalog.ewu.edu/course-listings/cscd/">
+                                    This course covers the challenges that arise when the size of data to be analyzed outgrows the limits of traditional data analytics systems,
+                                    the new challenges big data computing introduces and the evolution of the big-data ecosystem.
+                                    Additionally, the course touchs upon classical subjects such as MapReduce,
+                                    modern approaches such as Spark and the approaches of analyzing semi-structured and unstructured data.
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="EWU course catalog">EWU course catalog</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class = "accordion-item">
+                        <div class="accordion-header" id="data-mining-header">
+                            <h2 class="mb-0">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#data-mining" role="button" aria-expanded="false" aria-controls="data-mining">
+                                    Data Mining
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div class="accordion-collapse collapse" id="data-mining" data-bs-parent="#coursework-accordion" aria-labelledby="data-mining-header" >
+                            <figure>
+                                <blockquote  class="blockquote" cite="https://catalog.ewu.edu/course-listings/cscd/">
+                                    Data mining is the process of automatic discovery of patterns, changes, associations and anomalies in massive databases.
+                                    This course will provide an introduction to the main topics in data mining and knowledge discovery,
+                                    including: data preparation for knowledge discovery, frequent pattern and association mining, classification and cluster analysis.
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="EWU course catalog">EWU course catalog</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class = "accordion-item">
+                        <div class="accordion-header" id="virtual-reality-header">
+                            <h2 class="mb-0">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#virtual-reality" role="button" aria-expanded="false" aria-controls="virtual-reality">
+                                    Virtual Reality and Data visualization
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div class="accordion-collapse collapse" id="virtual-reality" data-bs-parent="#coursework-accordion" aria-labelledby="virtual-reality-header">
+                            <figure>
+                                <blockquote  class="blockquote" cite="https://catalog.ewu.edu/course-listings/cscd/">
+                                    This course introduces the basic concept of virtual reality as well as a number of ground breaking
+                                    concepts on scientific visualization and information visualization with hands-on projects and assignments.
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="EWU course catalog">EWU course catalog</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class = "accordion-item">
+                        <div class="accordion-header" id="parallel-computing-header">
+                            <h2 class="mb-0">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#parallel-computing" role="button" aria-expanded="false" aria-controls="parallel-computing">
+                                    Parallel and Cloud Computing
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div class="accordion-collapse collapse" id="parallel-computing" data-bs-parent="#coursework-accordion" aria-labelledby="parallel-computing-header" >
+                            <figure>
+                                <blockquote  class="blockquote" cite="https://catalog.ewu.edu/course-listings/cscd/">
+                                    This course explores up-to-date parallel platforms,
+                                    such as Cluster computing and Cloud computing that use networked computers to store and process large datasets in parallel.
+                                    Topics include synchronization techniques, high-performance server/service design, performance issues, distributed file systems and MapReduce framework,
+                                    VPC technology, Cloud scalability, availability and Cloud architecture. Hands-on assignments and projects are required.
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="EWU course catalog">EWU course catalog</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class = "col"></div>
     </div>
 </div>
+
+
 
 
 <?php require_once "footer.php"; ?>
