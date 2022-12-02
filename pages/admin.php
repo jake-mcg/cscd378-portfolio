@@ -1,15 +1,13 @@
 <?php require_once "header.php";
 
-
+#if the useer isn't logged in, tell them that they can't be here.
 if (!$auth->isLogged()) {
     header('HTTP/1.0 403 Forbidden');
     echo "Forbidden";
-
     exit();
-
 }
 
-
+#if they tried to register a new user and there was an error, set $warning variable and unset the session variable.
 $warning = isset($_SESSION["registerAttempt"]) ? $_SESSION["registerAttempt"]["message"] : "";
 unset($_SESSION["registerAttempt"]);
 ?>
@@ -25,11 +23,6 @@ unset($_SESSION["registerAttempt"]);
                         class="far fa-address-card fa-fw me-2"></i>Register Account</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2"
-                    role="tab" aria-controls="ex-with-icons-tabs-2" aria-selected="false"><i
-                        class="far fa-trash-alt fa-fw me-2"></i>Delete Account</a>
-            </li>
-            <li class="nav-item" role="presentation">
                 <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3"
                     role="tab" aria-controls="ex-with-icons-tabs-3 " aria-selected="false"><i
                         class="far fa-list-alt  fa-fw me-2"></i>Check Logs</a>
@@ -42,9 +35,11 @@ unset($_SESSION["registerAttempt"]);
             <!-- Register Tab -->
             <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel"
                 aria-labelledby="ex-with-icons-tab-1">
-                <p class="text-danger">
-                    <?php echo $warning;?>
-                </p>
+
+                    <?php
+                    #display the warning text if it's not empty.
+                    echo !empty($warning)?'<p class="text-danger">'.$warning.'</p>':"";?>
+
                 <form method = "post" action = "register.php">
                     <!-- Email input -->
                     <div class="form-group row">
@@ -73,19 +68,6 @@ unset($_SESSION["registerAttempt"]);
                 </form>
             </div>
 
-            <!-- Delete Tab -->
-            <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="ex-with-icons-tab-2">
-                <!-- will probably need to rename id's in this section -->
-                <form>
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                        <input type="email" id="form3Example3" class="form-control" />
-                        <label class="form-label" for="form3Example3">Email address</label>
-                    </div>
-                    <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary mb-4">Register</button>
-                </form>
-            </div>
 
             <!-- Logs Tab -->
             <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
