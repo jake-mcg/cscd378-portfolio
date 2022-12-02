@@ -2,13 +2,41 @@
 
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        echo "setting up cookies";
+        if(!(isset($_POST["email"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["companyName"]) and isset($_POST["message"])))
+        {
+            header('location:/');
+            exit();
+        }
+
+        #echo "setting up cookies";
         setcookie("firstName",$_POST["firstName"]);
         setcookie("lastName",$_POST["lastName"]);
         setcookie("companyName",$_POST["companyName"]);
         setcookie("timestamp", date("Y-m-d h:i:s a"));
-        header('location:CookieTest.php'); ;
+        $query = "insert into contact (email, fname, lname, company,message) values(?,?,?,?,?)";
+
+        #grab and escape the values for the message
+        $email = htmlspecialchars($_POST["email"]);
+        $fname = htmlspecialchars($_POST["firstName"]);
+        $lname = htmlspecialchars($_POST["lastName"]);
+        $company = htmlspecialchars($_POST["companyName"]);
+        $message = htmlspecialchars(substr($_POST["message"],0,1999));
+        $stmt = $dbh->prepare($query);
+
+        #bind the parameters
+        $stmt->bindParam(1,$email);
+        $stmt->bindParam(2,$fname);
+        $stmt->bindParam(3,$lname);
+        $stmt->bindParam(4,$company);
+        $stmt->bindParam(5,$message);
+
+        #store the message
+        $stmt->execute();
+        #redirect to cookieTest.php TEMPORARY
+        header('location:CookieTest.php');
+        exit();
     }
+
 ?>
     <div class="container mt-5">
     <div class = "container">
@@ -31,7 +59,7 @@
         <div class="form-group row">
             <label for="emailBox" class="col-sm-2 col-form-label">Email</label>
             <div class="col-7">
-                <input type="text" class="form-control" id="emailBox" name="Email" placeholder="Enter Email">
+                <input type="text" class="form-control" id="emailBox" name="email" placeholder="Enter Email">
             </div>
         </div>
 
@@ -43,9 +71,9 @@
         </div>
 
         <div class="form-group row">
-            <label for="companyNameBox" class="col-sm-2 col-form-label">Company</label>
+            <label for="messageBox" class="col-sm-2 col-form-label">Message</label>
             <div class="col-7">
-                <textarea cols="90" rows="10"></textarea>
+                <textarea class="form-control" id="messageBox" name="message" maxlength="2000"  cols="90" rows="10"></textarea>
             </div>
         </div>
 
