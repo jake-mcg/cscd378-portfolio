@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="edited links to point to the right places">
-      <change afterPath="$PROJECT_DIR$/pages/register.php" afterDir="false" />
+    <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="hooked up registration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/CookieTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/CookieTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/cookieForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cookieForm.php" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +51,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KC\PhpstormProjects\cscd378\cscd378-portfolio" />
+      <recent name="C:\Users\KC\PhpstormProjects\cscd378\cscd378-portfolio\pages" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,7 +71,10 @@
       <updated>1668293465115</updated>
       <workItem from="1668293470508" duration="29000" />
       <workItem from="1669061251643" duration="14202000" />
-      <workItem from="1669669838058" duration="6204000" />
+      <workItem from="1669669838058" duration="23564000" />
+      <workItem from="1669956129777" duration="1844000" />
+      <workItem from="1669958061183" duration="1282000" />
+      <workItem from="1669959451216" duration="1842000" />
     </task>
     <task id="LOCAL-00001" summary="Finished the skeleton of the login system.">
       <created>1669071929755</created>
@@ -99,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669670071915</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hooked up registration.">
+      <created>1669755210250</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669755210250</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +145,7 @@
     <MESSAGE value="Bugfixes and added logout functionality" />
     <MESSAGE value="borrowed Jake's portfolio stub" />
     <MESSAGE value="edited links to point to the right places" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited links to point to the right places" />
+    <MESSAGE value="hooked up registration." />
+    <option name="LAST_COMMIT_MESSAGE" value="hooked up registration." />
   </component>
 </project>
