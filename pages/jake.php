@@ -75,5 +75,34 @@
         </div>
     </div>
     </div>
+    <div class="container">
+        <div class="row my-5">
+            <h2>Projects</h2>
+        </div>
+        <div class="row my-5">
+        <div class="card text-white bg-primary rounded-2">
+            <div class="row my-5 justify-content-between">
+                <div class="col-md-3">
+                    <img src="images/jake.webp" alt="Image Description" class="img-fluid rounded-start" />
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h3 class="card-title">Project Title</h3>
+                        <p class="card-text">
+                            Lacinia at quis risus sed vulputate odio. Elementum sagittis vitae et leo duis. Eu non diam
+                            phasellus vestibulum. Faucibus in ornare quam viverra orci sagittis eu. Sit amet consectetur
+                            adipiscing elit duis tristique sollicitudin.
+                        </p>
+                        <a href="https://github.com/jake-mcg/cscd378-portfolio" style="color:aquamarine">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
 </body>
 <?php require_once "footer.php"; ?>
