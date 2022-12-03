@@ -44,7 +44,7 @@
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     The instructions for the database initialization are included in the readme of the project. The
-                    script is named [SCRIPTNAME] and can be found in the repository.
+                    script is named <em>mydatabase.sql</em> and can be found in the repository.
                 </div>
             </div>
         </div>
@@ -65,10 +65,7 @@
                         <li>Username: hello@goodbye.com</li>
                         <li>Password: password</li>
                     </ul>
-                    
-                    
-
-                    When signed on, navigate to the Admin.php page by clicking the "Admin" button on the header. Here
+                    When signed on, navigate to the <strong>admin.php</strong> page by clicking the "Admin" button on the header. Here
                     you will find all admin features.
                 </div>
             </div>
@@ -84,7 +81,7 @@
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    Navigate to the cookieForm.php by clicking the "Contact us" button on the header of the site.
+                    Navigate to the <strong>cookieForm.php</strong> by clicking the "Contact us" button on the header of the site.
                     Completing the form will store a cookie on your machine and its contents will be displayed upon
                     future visits to the page.
                 </div>
@@ -101,7 +98,7 @@
             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    When signed on, navigate to the Admin.php page by clicking the "Admin" button on the header. There
+                    When signed on, navigate to the <strong>admin.php</strong> page by clicking the "Admin" button on the header. There
                     you can find logs and admin tools.
                 </div>
             </div>
