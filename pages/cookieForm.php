@@ -45,11 +45,11 @@ if (isset($_COOKIE["firstName"]) && isset($_COOKIE["lastName"]) && isset($_COOKI
             <div class="card col-6 border border-primary shadow-0 mt-1">
                 <div class="card-body">
                     <p class="card-text">
-                        Welcome back to our site.'
+                        Welcome back to our site '
         . $_COOKIE["firstName"]
         . ' '
         . $_COOKIE["lastName"]
-        . ' <br>We are glad you are here! Please feel free to send us another message. You last sent a message on <em>'
+        . '! <br>We are glad you are here! Please feel free to send us another message. <br> You last sent a message on <em>'
         . $_COOKIE["timestamp"]
         . '
                     <em></p>
