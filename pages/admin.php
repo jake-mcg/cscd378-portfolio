@@ -18,14 +18,13 @@ unset($_SESSION["registerAttempt"]);
         <!-- Tabs navs -->
         <ul class="nav nav-tabs justify-content-center mb-3" id="ex-with-icons" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1"
-                    role="tab" aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i
-                        class="far fa-address-card fa-fw me-2"></i>Register Account</a>
+                <a class="nav-link active" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab" aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i class="far fa-address-card fa-fw me-2"></i>Register Account</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3"
-                    role="tab" aria-controls="ex-with-icons-tabs-3 " aria-selected="false"><i
-                        class="far fa-list-alt  fa-fw me-2"></i>Check Logs</a>
+                <a class="nav-link" id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab" aria-controls="ex-with-icons-tabs-2" aria-selected="true"><i class="far fa-address-card fa-fw me-2"></i>Contact Messages</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab" aria-controls="ex-with-icons-tabs-3 " aria-selected="false"><i class="far fa-list-alt  fa-fw me-2"></i>Failed Logins</a>
             </li>
         </ul>
         <!-- Tabs navs -->
@@ -33,20 +32,18 @@ unset($_SESSION["registerAttempt"]);
         <!-- Tabs content -->
         <div class="tab-content" id="ex-with-icons-content">
             <!-- Register Tab -->
-            <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel"
-                aria-labelledby="ex-with-icons-tab-1">
+            <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1">
 
                 <?php
-                    #display the warning text if it's not empty.
-                    echo !empty($warning)?'<p class="text-danger">'.$warning.'</p>':"";?>
+                #display the warning text if it's not empty.
+                echo !empty($warning) ? '<p class="text-danger">' . $warning . '</p>' : ""; ?>
 
                 <form method="post" action="register.php">
                     <!-- Email input -->
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label" for="email">Email address</label>
                         <div class="col-sm-10">
-                            <input type="email" id="email" class="form-control" name="email"
-                                placeholder="email address" />
+                            <input type="email" id="email" class="form-control" name="email" placeholder="email address" />
                         </div>
                     </div>
 
@@ -54,15 +51,13 @@ unset($_SESSION["registerAttempt"]);
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label" for="password">Password</label>
                         <div class="col-sm-10">
-                            <input type="password" id="password" class="form-control" name="pass"
-                                placeholder="password" />
+                            <input type="password" id="password" class="form-control" name="pass" placeholder="password" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label" for="confirm">Confirm Password</label>
                         <div class="col-sm-10">
-                            <input type="password" id="confirm" class="form-control" name="confPass"
-                                placeholder="confirm password" />
+                            <input type="password" id="confirm" class="form-control" name="confPass" placeholder="confirm password" />
                         </div>
                     </div>
 
@@ -71,17 +66,34 @@ unset($_SESSION["registerAttempt"]);
                 </form>
             </div>
 
+            <!-- Contact Messages Tab -->
+            <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="ex-with-icons-tab-2">
 
-            <!-- Logs Tab -->
+                <!-- Contact Messages Table -->
+                <table class="table">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Email</th>
+                            <th>First</th>
+                            <th>Last</th>
+                            <th>Company</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php require_once "contactmessages.php"
+                        ?>
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+            <!-- Failed Logins Tab -->
             <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
 
-                <div class="row my-5">
-                    <div class="d-flex justify-content-center align-items-center ">
-                        <h5>Failed Login Attempts</h5>
-                    </div>
-                </div>
-
-                <!-- logs Table -->
+                <!-- Failed Logins Table -->
                 <table class="table">
                     <thead class="table-primary">
                         <tr>
@@ -93,10 +105,7 @@ unset($_SESSION["registerAttempt"]);
                     <tbody>
                         <?php require_once "badloginattempts.php" ?>
                     </tbody>
-
                 </table>
-
-
             </div>
         </div>
         <!-- Tabs content -->
@@ -107,4 +116,4 @@ unset($_SESSION["registerAttempt"]);
 
 </div>
 
-<?php require_once "footer.php";?>
+<?php require_once "footer.php"; ?>
