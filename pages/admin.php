@@ -24,13 +24,13 @@ require_once "header.php";
         <!-- Tabs navs -->
         <ul class="nav nav-tabs justify-content-center mb-3" id="ex-with-icons" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab" aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i class="far fa-address-card fa-fw me-2"></i>Register Account</a>
+                <a class="nav-link active" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab" aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i class="fas fa-user-plus fa-fw me-2"></i>Register Account</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab" aria-controls="ex-with-icons-tabs-2" aria-selected="true"><i class="far fa-address-card fa-fw me-2"></i>Contact Messages</a>
+                <a class="nav-link" id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab" aria-controls="ex-with-icons-tabs-2" aria-selected="true"><i class="fas fa-address-card fa-fw me-2"></i>Contact Messages</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab" aria-controls="ex-with-icons-tabs-3 " aria-selected="false"><i class="far fa-list-alt  fa-fw me-2"></i>Failed Logins</a>
+                <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab" aria-controls="ex-with-icons-tabs-3 " aria-selected="false"><i class="fas fa-list-alt  fa-fw me-2"></i>Failed Logins</a>
             </li>
         </ul>
         <!-- Tabs navs -->

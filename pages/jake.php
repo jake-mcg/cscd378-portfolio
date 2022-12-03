@@ -10,10 +10,8 @@
                 <h1>Jake McGillicuddy</h1>
                 <h3>EWU Computer Science - Senior</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus, tortor ac iaculis
-                    pellentesque, dolor mi dignissim dolor, id malesuada neque velit in diam. Praesent sit amet egestas
-                    enim. Phasellus pellentesque sollicitudin sapien eget lacinia. Vestibulum suscipit convallis erat at
-                    sollicitudin
+                    I like to solve computational problems and learn about new technologies. In my spare time I like to
+                    go outside and solve puzzles.
                 </p>
             </div>
         </div>
@@ -42,11 +40,20 @@
         <div class="row justify-content-between">
             <div class="col-5">
                 <h2>Work Experience</h2>
-                <h6>Curabitur porttitor at Efficitur Orci Aliquam Sagittis</h6>
-                <p>Fusce non euismod turpis. Donec at fermentum massa. Proin ut odio nec lorem maximus gravida.
-                    Curabitur aliquam enim sed elit auctor, ut fringilla risus ultricies. Sed ut libero enim. </p>
+                <h6>Web Designer at Idaho Family Resource and Training Center</h6>
+                <p class="text-muted">August 2022 - Present</p>
+                <p>My role here involves implementing and maintaining the Idaho Family Resource and -
+                    and Training Center website. This includes ensuring site content is up-to-date, features work across
+                    all devices, and implementation of accessibility features and SEO. </p>
+                <h6>Software Development Engineer in Test (SDET) at Washington State Digital Archives</h6>
+                <p class="text-muted">June 2018 - February 2020</p>
+                <p>During my time at the Digital Archives, I assisted in development of new software and maintenance of
+                    old software for use with the
+                    Washington Office of Secretary of State.
+                </p>
                 <h2>Education</h2>
                 <h6>BS in Computer Science at Eastern Washington University</h6>
+                <p class="text-muted">Expected Graduation Date: December 2023</p>
                 <p>Donec aliquet ultrices ipsum, id posuere ex pulvinar non. Integer eget odio dictum, convallis diam
                     quis, placerat odio. Sed placerat nulla at nulla semper lobortis. Donec sollicitudin aliquet ante
                     mattis interdum.</p>
@@ -55,21 +62,30 @@
                 <h2>Skills</h2>
                 <div class="progress my-3" style="height:25px;">
                     <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                        aria-valuemin="0" aria-valuemax="100">Skill</div>
+                        aria-valuemin="0" aria-valuemax="100">Communication</div>
                 </div>
                 <div class="progress my-3" style="height:25px;">
-                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                        aria-valuemin="0" aria-valuemax="100">Skill</div>
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="95"
+                        aria-valuemin="0" aria-valuemax="100">Quality Assurance</div>
                 </div>
                 <div class="progress my-3" style="height:25px;">
-                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                        aria-valuemin="0" aria-valuemax="100">Skill</div>
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="95"
+                        aria-valuemin="0" aria-valuemax="100">Unit Testing</div>
+                </div>
+
+                <div class="progress my-3" style="height:25px;">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="95"
+                        aria-valuemin="0" aria-valuemax="100">Java</div>
+                </div>
+                <div class="progress my-3" style="height:25px;">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="95"
+                        aria-valuemin="0" aria-valuemax="100">C#</div>
                 </div>
                 <h2>Courses</h2>
-                <h6>Maecenas dolor at Eastern Washington University</h6>
+                <h6>Parallel and Cloud Computing at Eastern Washington University</h6>
                 <p>
-                    Quisque vel elit ac quam auctor eleifend non a orci. Morbi sed mattis enim. Vivamus blandit ante
-                    sapien, ut tempus velit volutpat laoreet.
+                    Learned to create multi-threaded programs and to use AWS for programs based on cloud
+                    infrastructure
                 </p>
             </div>
         </div>
@@ -80,26 +96,28 @@
             <h2>Projects</h2>
         </div>
         <div class="row my-5">
-        <div class="card text-white bg-primary rounded-2">
-            <div class="row my-5 justify-content-between">
-                <div class="col-md-3">
-                    <img src="images/jake.webp" alt="Image Description" class="img-fluid rounded-start" />
-                </div>
-                <div class="col-md-9">
-                    <div class="card-body">
-                        <h3 class="card-title">Project Title</h3>
-                        <p class="card-text">
-                            Lacinia at quis risus sed vulputate odio. Elementum sagittis vitae et leo duis. Eu non diam
-                            phasellus vestibulum. Faucibus in ornare quam viverra orci sagittis eu. Sit amet consectetur
-                            adipiscing elit duis tristique sollicitudin.
-                        </p>
-                        <a href="https://github.com/jake-mcg/cscd378-portfolio" style="color:aquamarine">View Project</a>
+            <div class="card text-white bg-primary rounded-2">
+                <div class="row my-5 justify-content-between">
+                    <div class="col-md-3">
+                        <img src="images/jake.webp" alt="Image Description" class="img-fluid rounded-start" />
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h3 class="card-title">This Portfolio Site</h3>
+                            <p class="card-text">
+                                In designing this portfolio site, I sharpened several skills essential to project
+                                development, such as working with a
+                                team and utilizing existing solutions to problems. The site is made with several
+                                libraries which gave me insight into web development.
+                            </p>
+                            <a href="https://github.com/jake-mcg/cscd378-portfolio" style="color:aquamarine">View
+                                Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
     </div>
 
 
