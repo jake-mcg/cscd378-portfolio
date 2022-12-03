@@ -1,4 +1,6 @@
-<?php require_once "header.php";
+<?php
+
+require_once "php-head.php";
 
 #if the user isn't logged in, tell them that they can't be here.
 if (!$auth->isLogged()) {
@@ -7,9 +9,13 @@ if (!$auth->isLogged()) {
     exit();
 }
 
+
 #if they tried to register a new user and there was an error, set $warning variable and unset the session variable.
 $warning = isset($_SESSION["registerAttempt"]) ? $_SESSION["registerAttempt"]["message"] : "";
 unset($_SESSION["registerAttempt"]);
+
+
+require_once "header.php";
 ?>
 <div class="card text-center container mt-5 mb-5">
     <h1 class="card-header">Admin Features</h1>

@@ -1,11 +1,9 @@
 <?php
-require_once 'db-connect.php';
-$pdo = new DBConnect();
-$dbh = $pdo->connect();
+require_once "php-head.php";
 
 #if they sent a message handle storing the message.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    if (!(isset($_POST["email"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["companyName"]) and isset($_POST["message"]))) {
+    if (empty($_POST["email"]) or empty($_POST["firstName"]) or empty($_POST["lastName"]) or empty($_POST["companyName"]) or empty($_POST["message"])) {
         header('location:/');
         exit();
     }

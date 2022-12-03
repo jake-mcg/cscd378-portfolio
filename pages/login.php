@@ -1,4 +1,5 @@
-<?php require_once "header.php";
+<?php
+require_once "php-head.php";
 #if the user are already logged in send them to the main page.
 if($auth->isLogged())
 {
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit();
     }
 }
-
+require_once "header.php";
 ?>
 
 

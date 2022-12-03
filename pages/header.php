@@ -1,26 +1,6 @@
 <?php
 #load in libraries
-require_once __DIR__ . "/../vendor/autoload.php";
-
-use PHPAuth\Auth;
-use PHPAuth\Config;
-
-session_start();
-
-#redirect to https if needed
-
-if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
-    $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    header('HTTP/1.1 301 Moved Permanently');
-    header('Location: ' . $location);
-    exit();
-}
-
-
-#Create authentication object with database connection
-$dbh = new PDO("mysql:host=localhost;dbname=mydatabase", "root", "");
-$config = new Config($dbh);
-$auth   = new Auth($dbh, $config);
+require_once "php-head.php"
 ?>
 
 <!doctype html>
@@ -105,18 +85,16 @@ $auth   = new Auth($dbh, $config);
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         <?php
-                        $startTag = "<li><a class='dropdown-item' href='#'>";
-                        $endTag = "</a></li>";
+                            $startTag = "<li><a class='dropdown-item' href='#'>";
+                            $endTag = "</a></li>";
 
 
-                        if ($auth->isLogged()) {
-                            $text = $auth->getCurrentUser()["email"];
-                            echo ($startTag . $text . $endTag);
-                        } else {
-                            echo ("<li><a class='dropdown-item' href='#'>NOT Logged in</a></li>");
-                        }
-
-
+                            if ($auth->isLogged()) {
+                                $text = $auth->getCurrentUser()["email"];
+                                echo ($startTag . $text . $endTag);
+                            } else {
+                                echo ("<li><a class='dropdown-item' href='#'>NOT Logged in</a></li>");
+                            }
                         ?>
                     </ul>
                 </div>
