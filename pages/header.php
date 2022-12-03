@@ -1,6 +1,7 @@
 <?php
 #load in libraries
 require_once __DIR__ . "/../vendor/autoload.php";
+
 use PHPAuth\Auth;
 use PHPAuth\Config;
 
@@ -9,10 +10,10 @@ session_start();
 #redirect to https if needed
 
 if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
-$location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-header('HTTP/1.1 301 Moved Permanently');
-header('Location: ' . $location);
-exit();
+    $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' . $location);
+    exit();
 }
 
 
@@ -67,9 +68,12 @@ $auth   = new Auth($dbh, $config);
                         <a class="nav-link" href="team.php">Team</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="cookieForm.php">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
                         <?php
 
-                        if(!$auth->isLogged())
+                        if (!$auth->isLogged())
                             echo "<a class=\"nav-link\" href=\"login.php\">Log in</a>";
                         else
                             echo "<a class=\"nav-link\" href=\"admin.php\">Admin</a>";
@@ -79,7 +83,7 @@ $auth   = new Auth($dbh, $config);
                     <li class="nav-item">
                         <?php
 
-                        if($auth->isLogged())
+                        if ($auth->isLogged())
                             echo "<a class=\"nav-link\" href=\"logout.php\">Log Out</a>"; ?>
                     </li>
                 </ul>
@@ -100,20 +104,19 @@ $auth   = new Auth($dbh, $config);
                         <!-- <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                        <?php 
+                        <?php
                         $startTag = "<li><a class='dropdown-item' href='#'>";
                         $endTag = "</a></li>";
-                        
-                        
-                        if($auth->isLogged())
-                        {
+
+
+                        if ($auth->isLogged()) {
                             $text = $auth->getCurrentUser()["email"];
-                            echo($startTag . $text . $endTag);
-                        } else{
-                            echo("<li><a class='dropdown-item' href='#'>NOT Logged in</a></li>");
+                            echo ($startTag . $text . $endTag);
+                        } else {
+                            echo ("<li><a class='dropdown-item' href='#'>NOT Logged in</a></li>");
                         }
-                        
-                        
+
+
                         ?>
                     </ul>
                 </div>
