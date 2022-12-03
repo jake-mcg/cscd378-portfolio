@@ -1,6 +1,9 @@
-<?php require_once "header.php";
+<?php
+require_once 'db-connect.php';
+$pdo = new DBConnect();
+$dbh = $pdo->connect();
 
-
+    #if they
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if(!(isset($_POST["email"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["companyName"]) and isset($_POST["message"])))
         {
@@ -33,8 +36,19 @@
         #store the message
         $stmt->execute();
         #redirect to cookieTest.php TEMPORARY
-        header('location:CookieTest.php');
+        header('location:cookieForm.php');
         exit();
+    }
+    require_once "header.php";
+
+    #if they have the cookies, send them a welcome back message.
+    if(isset($_COOKIE["firstName"]) && isset($_COOKIE["lastName"]) && isset($_COOKIE["companyName"])) {
+        echo "<div class = 'card'><p>";
+        echo "welcome back " . $_COOKIE["firstName"].  " " . $_COOKIE["lastName"].", " ;
+        echo "from ".$_COOKIE["companyName"]."<br>" ;
+        echo "you last sent a message on ";
+        echo $_COOKIE["timestamp"];
+        echo "</p></div>";
     }
 
 ?>
