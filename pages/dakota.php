@@ -4,108 +4,144 @@
     <div class="container">
         <div class="row my-3">
             <div class="col-3">
-                <img src="images/jake.webp" alt="Jake Profile Picture" class="img-fluid rounded-start" />
+                <img src="images/dakota.webp" alt="Dakota Profile Picture" class="img-fluid rounded-start" />
             </div>
             <div class="col-9">
-                <h1>Jake McGillicuddy</h1>
+                <h1>Dakota Condos</h1>
                 <h3>EWU Computer Science - Senior</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus, tortor ac iaculis
-                    pellentesque, dolor mi dignissim dolor, id malesuada neque velit in diam. Praesent sit amet egestas
-                    enim. Phasellus pellentesque sollicitudin sapien eget lacinia. Vestibulum suscipit convallis erat at
-                    sollicitudin
-                </p>
+                <h5>Graduation Winter 2022</h5>
+                <p class="text-muted">- The stock photos were too good to not keep.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
-                    <path
-                        d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
-                </svg>
-                <a href="mailto:jmcgillicuddy@ewu.edu">jmcgillicuddy@ewu.edu</a>
+        <div class="row justify-content-evenly">
+            <!-- email -->
+            <div class="col-4">
+                <i class="fas fa-envelope fa-fw me-2"></i><a href="mailto:dcondos@ewu.edu">dcondos@ewu.edu</a>
             </div>
-            <div class="col-6 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                </svg>
-                <a href="https://github.com/jake-mcg">github.com/jake-mcg</a>
-
-            </div>
-            <p class="border-top"></p>
-        </div>
-        <div class="row justify-content-between">
-            <div class="col-5">
-                <h2>Work Experience</h2>
-                <h6>Curabitur porttitor at Efficitur Orci Aliquam Sagittis</h6>
-                <p>Fusce non euismod turpis. Donec at fermentum massa. Proin ut odio nec lorem maximus gravida.
-                    Curabitur aliquam enim sed elit auctor, ut fringilla risus ultricies. Sed ut libero enim. </p>
-                <h2>Education</h2>
-                <h6>BS in Computer Science at Eastern Washington University</h6>
-                <p>Donec aliquet ultrices ipsum, id posuere ex pulvinar non. Integer eget odio dictum, convallis diam
-                    quis, placerat odio. Sed placerat nulla at nulla semper lobortis. Donec sollicitudin aliquet ante
-                    mattis interdum.</p>
-            </div>
-            <div class="col-5 ">
-                <h2>Skills</h2>
-                <div class="progress my-3" style="height:25px;">
-                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                        aria-valuemin="0" aria-valuemax="100">Skill</div>
-                </div>
-                <div class="progress my-3" style="height:25px;">
-                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                        aria-valuemin="0" aria-valuemax="100">Skill</div>
-                </div>
-                <div class="progress my-3" style="height:25px;">
-                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                        aria-valuemin="0" aria-valuemax="100">Skill</div>
-                </div>
-                <h2>Courses</h2>
-                <h6>Maecenas dolor at Eastern Washington University</h6>
-                <p>
-                    Quisque vel elit ac quam auctor eleifend non a orci. Morbi sed mattis enim. Vivamus blandit ante
-                    sapien, ut tempus velit volutpat laoreet.
-                </p>
+            <!-- github -->
+            <div class="col-4">
+                <i class="fab fa-github fa-fw me-2"></i><a href="https://github.com/dakotacondos">github.com/dakotacondos</a>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="container">
-        <div class="row my-5">
-            <h2>Projects</h2>
-        </div>
-        <div class="row my-5">
-            <div class="card text-white bg-primary rounded-2">
-                <div class="row my-5 justify-content-between">
-                    <div class="col-md-3">
-                        <img src="images/jake.webp" alt="Image Description" class="img-fluid rounded-start" />
+        <hr>
+        <!-- content cards -->
+        <div class="row g-4">
+            <!-- Work Experience -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        <h4 class="card-title">Work Experience</h4>
                     </div>
-                    <div class="col-md-9">
-                        <div class="card-body">
-                            <h3 class="card-title">Project Title</h3>
-                            <p class="card-text">
-                                Lacinia at quis risus sed vulputate odio. Elementum sagittis vitae et leo duis. Eu non
-                                diam
-                                phasellus vestibulum. Faucibus in ornare quam viverra orci sagittis eu. Sit amet
-                                consectetur
-                                adipiscing elit duis tristique sollicitudin.
-                            </p>
-                            <a href="https://github.com/jake-mcg/cscd378-portfolio" style="color:aquamarine">View
-                                Project</a>
-                        </div>
+                    <div class="card-body">
+
+
+                        <h4 class="d-inline-flex align-items-center"><object class="mx-3" data="\assets\img\usaf.svg" width="50" height="50"></object>U.S. Air Force</h4>
+
+
+                        <hr>
+
+                        <!-- Assignments -->
+                        <h6 class="card-title">Wright Patterson AFB, OH</h6>
+                        <p class="lh-1"><em>Executive Communications Supervisor</em></p>
+                        <p class="text-muted small lh-0"><em>January 2019 — January 2020</em></p>
+                        <ul>
+                            <li>Supervised a 12 member team that resolved high priority network outages affecting 4k+ personnel for the National Air and Space Intelligence Center</li>
+                            <li>Managed organizational telework deployment program and deployable training environments</li>
+                            <li><strong>Completed Air Force Leadership School and received the Distinguished Graduate and the Academic Achievement Awards</strong></li>
+                        </ul>
+
+                        <h6 class="card-title">RAF Lakenheath, England</h6>
+                        <p class="lh-1"><em>Asset Management Technician</em></p>
+                        <p class="text-muted small lh-0"><em>July 2016 — January 2019</em></p>
+                        <ul>
+                            <li>Coordinated with 17 different organizational groups to identify, develop and implement individual software/hardware solutions without disruption to workflow</li>
+                            <li>Led and coordinated multiple teams that completed the first successful rollout of Windows 10 to over 5k PCs on two United States Air Force Bases in Europe</li>
+                            <li><strong>Unit award: Manpower Utilization 2017</strong></li>
+                            <li><strong>Personal award: Outstanding Cyber Systems Airman - RAF Lakenheath 2017</strong></li>
+                        </ul>
+
+                        <h6 class="card-title">OSAN AFB, South Kore</h6>
+                        <p class="lh-1"><em>Client Systems Technician</em></p>
+                        <p class="text-muted small lh-0"><em>November 2014 — July 2019</em></p>
+                        <ul>
+                            <li>Provided IT support with 99.9% uptime for over 650 intelligence operators. Those operations directly resulted in 230 U-2 sorties and an immediate response to a North Korean artillery exchange</li>
+                            <li>Consulted with the Korean linguist training lab to implement customized software and hardware used to certify 72 Korean Linguists annually</li>
+                            <li><strong>Unit award: Air Force's Best Language Program 2015</strong></li>
+                        </ul>
+
+
                     </div>
                 </div>
             </div>
 
+            <!-- Languages -->
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-center">
+                        <h4 class="card-title">Languages</h4>
+                    </div>
+
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">Java</th>
+                                <th scope="col">C#</th>
+                                <th scope="col">Python</th>
+                                <th scope="col">HTML</th>
+                                <th scope="col">PHP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><object data="\assets\img\java.svg" width="30" height="30"> </object></td>
+                                <td><object data="\assets\img\c-sharp-c.svg" width="30" height="30"> </object></td>
+                                <td><object data="\assets\img\python.svg" width="30" height="30"> </object></td>
+                                <td><object data="\assets\img\html-5.svg" width="30" height="30"> </object></td>
+                                <td><object data="\assets\img\php.svg" width="30" height="30"> </object></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Certifications -->
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        <h4 class="card-title">Certifications</h4>
+                    </div>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">CompTIA A+ CE</th>
+                                <th scope="col">CompTIA Security+ CE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="\assets\img\Aplus Logo Certified CE.png" alt="CompTIA A+ CE logo" width="50" height="50"></td>
+                                <td><img src="\assets\img\SecurityPlus Logo Certified CE.png" alt="CompTIA Security+ CE logo" width="50" height="50"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
 
+    <style>
+        td,
+        th {
+            text-align: center;
+        }
 
+        p.lh-0 {
+            line-height: 0.1;
+        }
+
+        p.lh-1 {
+            line-height: 0.2;
+        }
+    </style>
 
 </body>
 <?php require_once "footer.php"; ?>
