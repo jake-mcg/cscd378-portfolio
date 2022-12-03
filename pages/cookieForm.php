@@ -3,7 +3,7 @@ require_once 'db-connect.php';
 $pdo = new DBConnect();
 $dbh = $pdo->connect();
 
-    #if they
+    #if they sent a message handle storing the message.
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if(!(isset($_POST["email"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["companyName"]) and isset($_POST["message"])))
         {
@@ -35,10 +35,11 @@ $dbh = $pdo->connect();
 
         #store the message
         $stmt->execute();
-        #redirect to cookieTest.php TEMPORARY
+        #redirect back to contact form
         header('location:cookieForm.php');
         exit();
     }
+    #load in site content
     require_once "header.php";
 
     #if they have the cookies, send them a welcome back message.
