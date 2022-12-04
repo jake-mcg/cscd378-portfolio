@@ -28,9 +28,9 @@
   - [x] Biography
   - [x] Qualifications
   - [x] Resume
-  - [] Export resume as PDF
+  - [ ] Export resume as PDF
   - [x] Projects
-  - [] Ability to add content dynamically.
+  - [ ] Ability to add content dynamically.
 
 ## Post-mortem
 
