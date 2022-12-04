@@ -88,11 +88,11 @@ _Password_: > password
 After being logged in you can navigate here from the navbar by selecting _Admin_
 There are multiple tabs with different admin features on them.
 
-**Register Account**
+##### Register Account
 Allows a new user account to be created.
 
-**Contact Messages**
+#### Contact Messages
 Displays saved contact messages from the database
 
-**Failed Logins** t
+#### Failed Logins
 Displays failed login attempts from the database. This function uses the phpAuth library and by default values are removed after 24 hours. Data has been seeded here manually to show functionality of the website.
