@@ -80,8 +80,8 @@ It will also display a contact form that can be filled out to create a cookie wi
 You can navigate here from the navbar by selecting **Login**, or by clicking the top-right button on the navbar.
 The seeded database accounts all have the same password of > password.
 
-_Username_: > hello@goodbye.com
-_Password_: > password
+ - _Username_: hello@goodbye.com
+ - _Password_: password
 
 #### Admin Section
 
