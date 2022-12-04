@@ -2,7 +2,7 @@
 
 <div class="row my-5">
     <div class="d-flex justify-content-center align-items-center ">
-        <h1>Welcome to the Clean Code Enthusiasts Portfolio Website!</h5>
+        <h1>Welcome to the Clean Code Enthusiasts Portfolio Website!</h1>
     </div>
 </div>
 
