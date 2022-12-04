@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="hooked up registration.">
+    <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="added cookie page">
+      <change afterPath="$PROJECT_DIR$/makeUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/CookieTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/cookieForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/keith.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/keith.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +50,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2HSzqL11yz48qD9J1hh3DqZ7LGr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,11 +80,10 @@
       <option name="presentableId" value="Default" />
       <updated>1668293465115</updated>
       <workItem from="1668293470508" duration="29000" />
-      <workItem from="1669061251643" duration="14202000" />
-      <workItem from="1669669838058" duration="23564000" />
-      <workItem from="1669956129777" duration="1844000" />
-      <workItem from="1669958061183" duration="1282000" />
-      <workItem from="1669959451216" duration="1842000" />
+      <workItem from="1669067880822" duration="140000" />
+      <workItem from="1669151642112" duration="4702000" />
+      <workItem from="1669669816307" duration="3586000" />
+      <workItem from="1670151054014" duration="274000" />
     </task>
     <task id="LOCAL-00001" summary="Finished the skeleton of the login system.">
       <created>1669071929755</created>
