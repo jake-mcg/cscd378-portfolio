@@ -27,3 +27,8 @@ TBD…
 4. Enable SSL on Laragon
 	- menu->apache->ssl-> enable
 	- menu->apache->ssl-> add laragon.crt to trust store
+5. Set Document Root
+	- go to menu and hover over your current document root (by default it is called www)
+	- click switch document root and set it to the project folder
+6. Open the website
+	- hover over the document root and click the button labelled "pages"
