@@ -16,11 +16,11 @@ TBD…
 2. Log onto Phpmyadmin
     - User: root
     - Password: [empty]
-3. Import provided database file (filename pending)
+3. Import provided database file
 
 	a. Import tab
 	
-	b. browse file and select [filename]
+	b. browse file and select mydatabase.sql
 	
 	c. Press the import button
 
