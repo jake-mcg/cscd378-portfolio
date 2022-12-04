@@ -57,40 +57,42 @@ The most challenging portion of the project was deciding what initial libraries 
 
 #### About Section
 
-You can navigate here from the navbar by selecting \* _About_ \*
+You can navigate here from the navbar by selecting **About**
 This page shows the itemized Final Project Specifications, and what our group did to fulfill them.
 
 #### Team Section
 
-You can navigate here from the navbar by selecting \* _Team_ \*
+You can navigate here from the navbar by selecting **Team**
 This page displays the team members of the project and provides a link to each members portfolio page.
 
 #### Portfolio Pages
 
-Each team member has a portfolio page that has some(potentially fictional) professional information about the team member including a short bio, links to email and github accounts, work/education history, and prior projects.
+Each team member has a portfolio page that has some (potentially fictional) professional information about the team member including a short bio, links to email and github accounts, work/education history, and prior projects.
 
 #### Contact Us Section
 
-You can navigate here from the navbar by selecting \* _Contact Us_ \*
+You can navigate here from the navbar by selecting **Contact Us**
 This page will display cookies at the top if cookies have been saved.
 It will also display a contact form that can be filled out to create a cookie with the form's information. That information is also saved to the database.
 
 #### Login Section
 
-You can navigate here from the navbar by selecting \* _login_ _, or by clicking the top-right button on the navbar.
-The seeded database accounts all have the same password of _ _password_. \*
-`
-	Username: hello@goodbye.com
-	Password: password
-	`
+You can navigate here from the navbar by selecting **Login**, or by clicking the top-right button on the navbar.
+The seeded database accounts all have the same password of > password.
+
+_Username_: > hello@goodbye.com
+_Password_: > password
 
 #### Admin Section
 
-After being logged in you can navigate here from the navbar by selecting \* _Admin_ \*
+After being logged in you can navigate here from the navbar by selecting _Admin_
 There are multiple tabs with different admin features on them.
 
-**Register Account** tab allows a new user account to be created.
+**Register Account**
+Allows a new user account to be created.
 
-**Contact Messages** tab displays saved contact messages from the database
+**Contact Messages**
+Displays saved contact messages from the database
 
-**Failed Logins** tab displays failed login attempts from the database. This function uses the phpAuth library and by default values are removed after 24 hours. Data has been seeded here manually to show functionality of the website.
+**Failed Logins** t
+Displays failed login attempts from the database. This function uses the phpAuth library and by default values are removed after 24 hours. Data has been seeded here manually to show functionality of the website.
