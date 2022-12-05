@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="added cookie page">
+    <list default="true" id="7d108bd4-b0df-473d-ad23-90dfb82a500b" name="Changes" comment="worked on portfolio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/ethan.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ethan.php" afterDir="false" />
     </list>
@@ -78,7 +78,7 @@
       <workItem from="1669151642112" duration="4702000" />
       <workItem from="1669669816307" duration="3586000" />
       <workItem from="1670151054014" duration="274000" />
-      <workItem from="1670157432044" duration="8453000" />
+      <workItem from="1670157432044" duration="10001000" />
     </task>
     <task id="LOCAL-00001" summary="Finished the skeleton of the login system.">
       <created>1669071929755</created>
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669755210250</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="worked on portfolio">
+      <created>1670201753573</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670201753573</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +157,7 @@
     <MESSAGE value="borrowed Jake's portfolio stub" />
     <MESSAGE value="edited links to point to the right places" />
     <MESSAGE value="hooked up registration." />
-    <option name="LAST_COMMIT_MESSAGE" value="hooked up registration." />
+    <MESSAGE value="worked on portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked on portfolio" />
   </component>
 </project>
